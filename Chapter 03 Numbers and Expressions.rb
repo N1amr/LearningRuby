@@ -132,13 +132,21 @@ x << "something"
 
 puts x #Push\nsomething
 
-print x,"\n" #["Push", "something"]
+#puts tokens_arr.inspect == print tokens_arr,"\n"
+puts x.inspect #["Push", "something"]
 puts "Popping from x:"
 x.length.times{
   puts x.pop
-  print x,"\n"
+  puts x.inspect
 }
 
 x = ["Word", "Play", "Fun"]
 puts x.join #WordPlayFun
 puts x.join(', ') #Word, Play, Fun
+
+#if you use scan without a block of code, it returns an array of all the matching parts of the string
+tokens_arr = "This is a test".scan(/\w+/)
+puts tokens_arr.inspect #["This", "is", "a", "test"]
+
+tokens_arr = "This is a test".split(/ /)
+puts tokens_arr.inspect #["This", "is", "a", "test"]
