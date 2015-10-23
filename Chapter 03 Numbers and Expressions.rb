@@ -114,9 +114,8 @@ Modifier  Description
 puts "String has vowels" if "This is a test" =~ /[aeiou]/
 puts "String contains no digits" unless "This is a test".match("[0-9]")
 
+#match returns a MatchData object that can be accessed like an array. The first element contains the data matched by the entire regular expression. However, each successive element contains that which was matched by each referenced section of the regular expression.
 x = "This is a test".match(/(\w+) (\w+)/)
 puts x[0] #This is
 puts x[1] #This
 puts x[2] #is
-
-x.next
