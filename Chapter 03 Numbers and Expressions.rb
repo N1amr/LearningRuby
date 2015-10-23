@@ -1,6 +1,6 @@
 age = 21
 puts "you are a teenager" if age > 12 && age < 20
-puts "you are not a teenager" unless age > 12 && age < 20
+puts "you are not a teenager" unless age >= 13 && age < 20
 puts "you are on your twenties" if age.between?(20,29)
 
 x = 5
@@ -58,3 +58,17 @@ y = 2
 puts x.to_s + " + " + y.to_s + " = " + (x + y).to_s
 my_string = "#{x} + #{y} = #{x + y}"
 puts my_string #prints "10 + 2 = 12"
+
+#String methods
+"Test".length #4
+"Test" + "Test" #TestTest
+"Test".capitalize #Test
+"Test".upcase #TEST
+"Test".downcase #test
+"Test".swapcase #tEST
+"Test".chop #Tes
+"Test".next #Tesu
+"Test".reverse #tseT
+"Test".hash #-98625764
+"Test".sum #416
+
