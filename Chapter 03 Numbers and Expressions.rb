@@ -200,7 +200,22 @@ x.each { |key, value| puts "#{key} equals #{value}" }
 puts x.keys.inspect #["a", "b", "c"]
 puts x.values.inspect #[1, 2, 3]
 x.delete("a")
-puts x.inspect #{"b"=>2, "c"=>3}
+puts x.inspect #{"b"=>20, "c"=>300}
 x.delete_if { |key, value| value < 25 }
-puts x.inspect
+puts x.inspect #{"c"=>300}
 
+people = {
+  'fred' => {
+  'name' => 'Fred Elliott',
+  'age' => 63,
+  'gender' => 'male',
+  'favorite painters' => ['Monet', 'Constable', 'Da Vinci']
+  },
+  'janet' => {
+  'name' => 'Janet S Porter',
+  'age' => 55,
+  'gender' => 'female'
+  }
+}
+
+puts people['fred'].inspect
