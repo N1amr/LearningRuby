@@ -21,3 +21,14 @@ puts x <=> y #Returns 0 if x and y are equal, 1 if x is higher, -1 if y is highe
   print "i = "
   puts i
 end
+
+#########################################
+#Float numbers
+
+puts 10/3
+puts 10.to_f / 3.to_f
+puts 3.333.to_i
+
+########################################
+#Constants are represented in Ruby by a variable name beginning with a capital letter
+PI = 3.14159
