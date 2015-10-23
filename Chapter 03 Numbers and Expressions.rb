@@ -350,10 +350,24 @@ puts a.inspect
 ##############################################
 #Symbols
 
-current_situation = "good"
-puts "Everything is fine" if current_situation == "good"
-puts "PANIC!" if current_situation == "bad"
+current_situation = :good
+puts "Everything is fine" if current_situation == :good
+puts "PANIC!" if current_situation == :bad
 
 person1 = { :name => "Fred", :age => 20, :gender => :male }
 puts person1[:name]
+
+##############################################
+#Converting Between Classes
+
+s = "123"
+sym = :L
+f = 192.2
+i = 5
+
+puts s.to_i
+puts sym.to_s
+puts f.to_i
+puts i.to_f
+puts f.to_s * 2
 
