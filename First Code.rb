@@ -9,12 +9,16 @@ person.gender = "Male";
 
 print "person is named "
 puts person.name
-puts prson.to_html()
 
 class Pet
   attr_accessor :name, :age, :gender, :color
 end
 
-class Cat < Pet
-
+class Dog < Pet
+  def bark
+    puts "Woof!"
+  end
 end
+
+my_dog = Dog.new
+my_dog.bark(); 
