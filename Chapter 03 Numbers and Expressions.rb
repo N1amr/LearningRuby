@@ -126,6 +126,13 @@ puts x[2] #is
 x = [1, 2, 3, 4]
 puts x[2] #3
 
+#Deleting elements from arrays
+x = ['1','2','3','4','5','6','7','8','9']
+x.delete('5') #returns deleted element if found (otherwise, returns an object of NilClass)
+x.delete_at(1) #returns deleted element if found (otherwise, returns an object of NilClass)
+x.delete_if { |e| e > '7' } #return x after deletions
+puts x.inspect
+
 x = [] #Create empty array
 x << "Push" #push elements to end
 x << "something"
@@ -151,6 +158,7 @@ puts tokens_arr.inspect #["This", "is", "a", "test"]
 tokens_arr = "This is a test".split(/ /)
 puts tokens_arr.inspect #["This", "is", "a", "test"]
 
+#Iterating over arrays
 [1, "test", 2, 3, 4].each { |element| puts element.to_s + "X" }
 
 src = [1, 2, 3, 4]
@@ -185,4 +193,14 @@ puts dictionary.size #2
 puts dictionary.length #2
 dictionary['cat'] = "fluffy animal"
 puts dictionary['cat']
+
+#Hashes methods
+x = { "a" => 100, "b" => 20, "c" => 300 }
+x.each { |key, value| puts "#{key} equals #{value}" }
+puts x.keys.inspect #["a", "b", "c"]
+puts x.values.inspect #[1, 2, 3]
+x.delete("a")
+puts x.inspect #{"b"=>2, "c"=>3}
+x.delete_if { |key, value| value < 25 }
+puts x.inspect
 
