@@ -120,3 +120,25 @@ puts x[0] #This is
 puts x[1] #This
 puts x[2] #is
 
+################################################
+#Arrays and Lists
+
+x = [1, 2, 3, 4]
+puts x[2] #3
+
+x = [] #Create empty array
+x << "Push" #push elements to end
+x << "something"
+
+puts x #Push\nsomething
+
+print x,"\n" #["Push", "something"]
+puts "Popping from x:"
+x.length.times{
+  puts x.pop
+  print x,"\n"
+}
+
+x = ["Word", "Play", "Fun"]
+puts x.join #WordPlayFun
+puts x.join(', ') #Word, Play, Fun
