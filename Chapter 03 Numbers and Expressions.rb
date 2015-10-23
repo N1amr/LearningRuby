@@ -154,6 +154,24 @@ puts tokens_arr.inspect #["This", "is", "a", "test"]
 [1, "test", 2, 3, 4].each { |element| puts element.to_s + "X" }
 
 src = [1, 2, 3, 4]
-arr = src.collect { |element| element = element * 11 ; element *100 }
+arr = src.collect { |element| element = element * 11 ; x = element ; x * 100 } #pushes last expression answer to returnd array
 puts src.inspect
 puts arr.inspect
+
+#Other array methods
+x = []
+puts "x is empty" if x.empty?
+
+x = [1, 2, 3, 4, 5]
+y = [1, 2, 3]
+concat = x + y
+difference = x - y
+puts concat.inspect
+puts difference.inspect
+puts x.include?(3)
+puts x.include?("x")
+puts "First element is #{x.first}"
+puts "Last element is #{x.last}"
+puts x.first(3).join(", ")
+puts x.last(2).join(", ")
+puts x.reverse.inspect
