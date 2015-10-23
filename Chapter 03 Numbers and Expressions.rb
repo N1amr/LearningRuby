@@ -132,7 +132,7 @@ x << "something"
 
 puts x #Push\nsomething
 
-#puts tokens_arr.inspect == print tokens_arr,"\n"
+#puts tokens_arr.inspect === print tokens_arr,"\n"
 puts x.inspect #["Push", "something"]
 puts "Popping from x:"
 x.length.times{
@@ -150,3 +150,10 @@ puts tokens_arr.inspect #["This", "is", "a", "test"]
 
 tokens_arr = "This is a test".split(/ /)
 puts tokens_arr.inspect #["This", "is", "a", "test"]
+
+[1, "test", 2, 3, 4].each { |element| puts element.to_s + "X" }
+
+src = [1, 2, 3, 4]
+arr = src.collect { |element| element = element * 11 ; element *100 }
+puts src.inspect
+puts arr.inspect
