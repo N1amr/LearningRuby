@@ -34,3 +34,7 @@ my_dog.bark
 puts my_dog.class
 puts 123.class
 puts "123".class
+
+age = 21
+puts "you are a teenager" if age>12 && age<20
+puts "you are not a teenager" unless age>12 && age<20
