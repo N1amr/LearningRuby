@@ -154,7 +154,8 @@ puts tokens_arr.inspect #["This", "is", "a", "test"]
 [1, "test", 2, 3, 4].each { |element| puts element.to_s + "X" }
 
 src = [1, 2, 3, 4]
-arr = src.collect { |element| element = element * 11 ; x = element ; x * 100 } #pushes last expression answer to returnd array
+#pushes last expression answer to returned array
+arr = src.collect { |element| element = element * 11 ; x = element ; x * 100 } #[1100, 2200, 3300, 4400]
 puts src.inspect
 puts arr.inspect
 
@@ -172,6 +173,16 @@ puts x.include?(3)
 puts x.include?("x")
 puts "First element is #{x.first}"
 puts "Last element is #{x.last}"
-puts x.first(3).join(", ")
-puts x.last(2).join(", ")
+puts x.first(3).join(", ") #1, 2, 3
+puts x.last(2).join(", ") #4, 5
 puts x.reverse.inspect
+
+################################################
+#Hashes
+
+dictionary = { 'cat' => 'feline animal', 'dog' => 'canine animal' }
+puts dictionary.size #2
+puts dictionary.length #2
+dictionary['cat'] = "fluffy animal"
+puts dictionary['cat']
+
