@@ -218,4 +218,71 @@ people = {
   }
 }
 
-puts people['fred'].inspect
+##############################################
+#Flow control
+
+age = 21
+type = age < 18 ? "child" : "adult"
+puts "You are #{type.match("^[aeiou].*")?'an':'a'} #{type}"
+
+fruit = "orange"
+
+#if/elsif/else/end
+if fruit == "orange"
+  color = "orange"
+elsif fruit == "banana"
+  color = "yellow"
+else
+  color = "unknown"
+  exit
+end
+
+#case/when/end
+case fruit
+when "orange"
+  color = "orange"
+when "banana"
+  color = "yellow"
+else
+  color = "unknown"
+end
+
+#case returning value
+color = case fruit
+when "orange"
+  "orange"
+when "banana"
+  "yellow"
+else
+  "unknown"
+end
+
+x = 1
+while x < 100
+  print x," "
+  x = x * 2
+end
+puts
+
+x = 1
+until x > 99
+  print x," "
+  x = x * 2
+end
+puts
+
+#each_vowel accepts a code block, as designated by the ampersand (&) before the variable name code_block in the method definition. It then iterates over each vowel in the literal array %w{a e i o u} and uses the call method on code_block to execute the code block once for each vowel, passing in the vowel variable as a parameter each time.
+def each_vowel(&code_block)
+  %w{a e i o u}.each { |vowel| code_block.call(vowel) }
+end
+
+#alternatively
+#def each_vowel
+#  %w{a e i o u}.each { |vowel| yield vowel }
+#end
+
+each_vowel { |vowel| puts vowel }
+
+print_parameter_to_screen = lambda { |x, y| puts x * y }
+print_parameter_to_screen.call(3,2) #6
+
