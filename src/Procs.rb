@@ -3,3 +3,10 @@ multiples_of_3 = Proc.new do |n|
 end
 
 puts (1..100).to_a.select(&multiples_of_3)
+
+say_hello = Proc.new do
+  puts "Hello"
+end
+
+say_hello.call
+
