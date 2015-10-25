@@ -6,7 +6,24 @@ my_hash = Hash.new
 default_value = 0
 my_hash = Hash.new(default_value)
 
-dictionary = { 'cat' => 'feline animal', 'dog' => 'canine animal' }
+dictionary = {
+  'cat' => 'feline animal',
+  'dog' => 'canine animal'
+}
+
+#Symbols as keys
+dictionary = {
+  :cat => 'feline animal',
+  :dog => 'canine animal'
+}
+
+#Note that even though these keys have colons at the end instead of the beginning
+#They're still symbols!
+dictionary = {
+  cat: 'feline animal',
+  dog: 'canine animal'
+}
+
 puts dictionary.size #2
 puts dictionary.length #2
 dictionary['cat'] = "fluffy animal"
