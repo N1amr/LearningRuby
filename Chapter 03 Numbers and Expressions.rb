@@ -202,6 +202,9 @@ puts x.reverse.inspect
 
 my_hash = Hash.new
 
+default_value = 0
+my_hash = Hash.new(default_value)
+
 dictionary = { 'cat' => 'feline animal', 'dog' => 'canine animal' }
 puts dictionary.size #2
 puts dictionary.length #2
