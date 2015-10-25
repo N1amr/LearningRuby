@@ -24,3 +24,9 @@ end
 
 puts add(5,7)
 
+#Implicit Return
+def add(a, b = 0)
+  a + b
+end
+
+puts add(5,7)
