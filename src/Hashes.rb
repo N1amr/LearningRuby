@@ -31,9 +31,15 @@ puts dictionary['cat']
 
 #Hashes methods
 x = { "a" => 100, "b" => 20, "c" => 300 }
+
+#Iterate
 x.each { |key, value| puts "#{key} equals #{value}" }
+x.each_key { |key| puts "#{key}" }
+x.each_value { |value| puts "#{value}" }
+
 puts x.keys.inspect #["a", "b", "c"]
 puts x.values.inspect #[1, 2, 3]
+
 x.delete("a")
 puts x.inspect #{"b"=>20, "c"=>300}
 x.delete_if { |key, value| value < 25 }
@@ -71,5 +77,5 @@ movie_ratings = {
 
 #Select
 good_movies = movie_ratings.select{ |name, rating|
-    rating > 3
+  rating > 3
 }
