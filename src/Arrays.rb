@@ -12,7 +12,7 @@ x.delete_if { |e| e > '7' } #return x after deletions
 puts x.inspect
 
 x = [] #Create empty array
-x << "Push" #push elements to end
+x << "Push" #push elements to end #concatenation operator 
 x << "something"
 
 puts x #Push\nsomething
