@@ -10,3 +10,7 @@ module Circle
   end
 end
 
+require 'module'
+
+include Math #use PI instead of Math::PI
+
