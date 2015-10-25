@@ -33,3 +33,11 @@ class DerivedClass < BaseClass
 
 end
 
+#You can directly access the attributes or methods of a superclass with Ruby's built-in super keyword
+class DerivedClass < Base
+  def some_method
+    super(optional args)
+    # Some stuff
+  end
+end
+
