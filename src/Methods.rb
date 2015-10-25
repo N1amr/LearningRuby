@@ -18,7 +18,7 @@ end
 whats_up("What up", "Justin", "Ben", "Kevin Sorbo")
 
 #Return value
-def add(a, b)
+def add(a, b = 0)
   return a + b
 end
 
