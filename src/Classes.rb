@@ -27,3 +27,9 @@ puts "Manufacturer: #{$manufacturer}"
 
 puts "Files: #{Computer.display_files}"
 # @@files belongs to the Computer class.
+
+#Inheritance
+class DerivedClass < BaseClass
+
+end
+
