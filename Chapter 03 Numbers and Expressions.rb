@@ -22,6 +22,17 @@ puts x <=> y #Returns 0 if x and y are equal, 1 if x is higher, -1 if y is highe
   puts i
 end
 
+for i in 1...5
+  puts i
+end
+
+i = 0
+loop do
+  puts i
+  i+=1
+  break if i > 4
+end
+
 #########################################
 #Float numbers
 
