@@ -28,8 +28,9 @@ end
 
 i = 0
 loop do
-  puts i
   i+=1
+  next if i % 2 == 0
+  puts i
   break if i > 4
 end
 
