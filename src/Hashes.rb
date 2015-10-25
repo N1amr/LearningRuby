@@ -62,3 +62,14 @@ b = [4, 5, 6]
 pairs = a.zip(b) #[[1, 4], [2, 5], [3, 6]]
 puts Hash[pairs].inspect # {1=>4, 2=>5, 3=>6}
 
+movie_ratings = {
+  truman_show: 4,
+  red_dawn: 1.5,
+  skyfall: 4,
+  alex_cross: 2,
+}
+
+#Select
+good_movies = movie_ratings.select{ |name, rating|
+    rating > 3
+}
