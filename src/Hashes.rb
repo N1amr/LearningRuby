@@ -57,3 +57,8 @@ people = {
   }
 }
 
+a = [1, 2, 3]
+b = [4, 5, 6]
+pairs = a.zip(b) #[[1, 4], [2, 5], [3, 6]]
+puts Hash[pairs].inspect # {1=>4, 2=>5, 3=>6}
+
