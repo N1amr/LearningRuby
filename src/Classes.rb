@@ -41,3 +41,20 @@ class DerivedClass < Base
   end
 end
 
+class Person
+  def initialize(name, job)
+    @name = name
+    @job = job
+  end
+
+  #  attr_reader :name
+  def name
+    @name
+  end
+
+  #  attr_writer :name
+  def job=(new_job)
+    @job = new_job
+  end
+end
+
