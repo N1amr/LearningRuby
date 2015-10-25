@@ -18,6 +18,7 @@ puts String(f) * 2
 puts s.to_i
 puts Integer(s)
 
-puts sym.to_s
 puts String(sym)
+puts s.intern
+puts sym.to_s
 
