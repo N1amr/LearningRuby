@@ -11,7 +11,7 @@ class Computer
     @username
   end
 
-  def self.display_files
+  def self.display_files # or   def Computer.display_files
     @@files
   end
 end
