@@ -10,3 +10,8 @@ end
 
 say_hello.call
 
+strings = ["1", "2", "3"]
+nums = strings.collect(&:to_i)
+puts strings.inspect #["1", "2", "3"]
+puts nums.inspect #[1, 2, 3]
+
