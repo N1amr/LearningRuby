@@ -14,6 +14,7 @@ end
 
 whats_up("What up", "Justin", "Ben", "Kevin Sorbo")
 
+#Return value
 def add(a, b)
   return a + b
 end
