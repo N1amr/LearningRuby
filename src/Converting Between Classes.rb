@@ -25,3 +25,6 @@ puts sym.to_s
 #Call and Response
 puts age.respond_to?(:next) #true #Check if age.next is valid
 
+#Check type
+puts "n is an integer." if 5.is_a? Integer
+
