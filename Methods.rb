@@ -1,3 +1,6 @@
+#Methods
+########
+
 #Parameterless
 def say_hello
   puts "Hello!"
