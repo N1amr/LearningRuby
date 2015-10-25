@@ -22,3 +22,6 @@ puts String(sym)
 puts s.intern
 puts sym.to_s
 
+#Call and Response
+puts age.respond_to?(:next) #true #Check if age.next is valid
+
