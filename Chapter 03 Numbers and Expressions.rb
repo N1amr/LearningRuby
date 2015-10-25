@@ -221,6 +221,10 @@ puts x.inspect #{"b"=>20, "c"=>300}
 x.delete_if { |key, value| value < 25 }
 puts x.inspect #{"c"=>300}
 
+x = x.sort_by {|a, b| b }
+x.reverse!
+
+#Hashes of hashes
 people = {
   'fred' => {
   'name' => 'Fred Elliott',
