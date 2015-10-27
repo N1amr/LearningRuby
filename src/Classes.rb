@@ -1,6 +1,6 @@
 class Computer
   $manufacturer = "Mango Computer, Inc." #global variable
-  @@files = {hello: "Hello, world!"} #class variable
+  @@files = "Hello, world!" #class variable
 
   def initialize(username, password)
     @username = username #instance variable

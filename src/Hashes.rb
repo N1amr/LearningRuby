@@ -19,10 +19,12 @@ dictionary = {
 
 #Note that even though these keys have colons at the end instead of the beginning
 #They're still symbols!
+=begin
 dictionary = {
   cat: 'feline animal',
   dog: 'canine animal'
 }
+=end
 
 puts dictionary.size #2
 puts dictionary.length #2
@@ -69,10 +71,10 @@ pairs = a.zip(b) #[[1, 4], [2, 5], [3, 6]]
 puts Hash[pairs].inspect # {1=>4, 2=>5, 3=>6}
 
 movie_ratings = {
-  truman_show: 4,
-  red_dawn: 1.5,
-  skyfall: 4,
-  alex_cross: 2,
+  :truman_show => 4,
+  :red_dawn => 1.5,
+  :skyfall => 4,
+  :alex_cross => 2,
 }
 
 #Select
