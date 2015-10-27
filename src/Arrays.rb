@@ -12,7 +12,7 @@ x.delete_if { |e| e > '7' } #return x after deletions
 puts x.inspect
 
 x = [] #Create empty array
-x << "Push" #push elements to end #concatenation operator 
+x << "Push" #push elements to end #concatenation operator
 x << "something"
 
 puts x #Push\nsomething
@@ -26,6 +26,8 @@ x.length.times{
 }
 
 x = ["Word", "Play", "Fun"]
+#or
+x = %w{Word Play Fun}
 puts x.join #WordPlayFun
 puts x.join(', ') #Word, Play, Fun
 
