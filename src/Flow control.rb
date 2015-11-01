@@ -89,6 +89,6 @@ end
 
 each_vowel { |vowel| puts vowel }
 
-print_parameter_to_screen = lambda { |x, y| puts x * y }
+print_parameter_to_screen = lambda { |arg1, arg2| puts arg1 * arg2 }
 print_parameter_to_screen.call(3,2) #6
 
